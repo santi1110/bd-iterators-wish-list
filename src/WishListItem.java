@@ -1,5 +1,3 @@
-package com.amazon.ata.dynamodbdeleteiterators.prework.wishList;
-
 public class WishListItem {
 
     private String title;

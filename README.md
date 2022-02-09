@@ -1,7 +1,5 @@
 ### Adding and removing with ListIterators
 
-**Branch name:** dynamodbdeleteiterators-prework
-
 Expected time required: 20 min
 
 You're creating an app that keeps track of your Amazon wish list. You want to be able to safely add and remove items
@@ -17,9 +15,6 @@ items from your wish list!
 * `removeItem()` : accepts a `List<WishListItem>` and an item and removes that specific item from the list.
 
 Once these methods are properly implemented, you should be able to pass all of the tests in the `WishListTest` class.
-
-When you've finished writing your code and testing, make sure `rde workflow run dynamodbdeleteiterators-prework-wishlist`
-is passing and push.
 
 HINTS:
 * [I'm having difficulty knowing when to add the item to the end of the list in the addAtIndex method.](./hints/hint-01.md)

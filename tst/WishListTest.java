@@ -1,5 +1,3 @@
-package com.amazon.ata.dynamodbdeleteiterators.prework.wishList;
-
 import java.util.ArrayList;
 import java.util.List;
 
