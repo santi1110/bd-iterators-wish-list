@@ -9,6 +9,7 @@ public class WishList {
      * @return the wishList with the newly added item
      */
     public List<WishListItem> addLast(List<WishListItem> wishList, WishListItem item) {
+        wishList.add(item);
         return wishList;
     }
 
@@ -20,6 +21,11 @@ public class WishList {
      * @return the wishList with the newly added item
      */
     public List<WishListItem> addAtIndex(List<WishListItem> wishList, WishListItem item, int index) {
+        if (index < 0 || index >= wishList.size()) {
+            wishList.add(item); // Add to the end if index is out of bounds
+        } else {
+            wishList.add(index, item); // Add at the specified index
+        }
         return wishList;
     }
 
@@ -29,6 +35,7 @@ public class WishList {
      * @return the empty wishList
      */
     public List<WishListItem> removeAll(List<WishListItem> wishList) {
+        wishList.clear();
         return wishList;
     }
 
@@ -39,6 +46,8 @@ public class WishList {
      * @return the wishList with the removed item
      */
     public List<WishListItem> removeItem(List<WishListItem> wishList, WishListItem item) {
+
+            wishList.remove(item); // Add at the specified index
         return wishList;
     }
 }
